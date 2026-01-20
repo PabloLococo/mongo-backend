@@ -6,8 +6,8 @@ import { MotherboardRouter } from "./routes/MotherboardRouter"
 import { DiscoRouter } from "./routes/DiscoRouter"
 import { MemoriaRouter } from "./routes/MemoriaRouter"
 import { authRouter } from "./routes/AuthRouter"
-
-process.loadEnvFile()
+import { config  as dotenvConfig} from "dotenv"
+dotenvConfig()
 
 const PORT = process.env.PORT
 
